@@ -1,0 +1,36 @@
+.body {
+    font-family: Arial;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "powerlaw composition"
+                         "energy scatmodel";
+    gap: 10px;
+}
+
+.item {
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+
+.powerlaw {
+    grid-area: powerlaw;
+}
+
+.composition {
+    grid-area: composition;
+}
+
+.energy {
+    grid-area: energy;
+}
+
+.scatmodel {
+    grid-area: scatmodel;
+}

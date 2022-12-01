@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>UM-SPICEs Halo Calculator</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body class="body">
+        <header>
+
+        </header>
+        <div>
+            <form>
+                <div class="grid">
+                    <!-- powerlaw -->
+                    <div class="powerlaw item">
+                        <h3>Powerlaw</h3>
+                        <label for="amin">amin:</label>
+                        <input type="number" id="amin" value=""><br>
+                        <label for="amax">amax:</label>
+                        <input type="number" id="amax" value=""><br>
+                        <label for="slope">slope:</label>
+                        <input type="number" id="slope" value=""><br>
+                    </div>
+                    <!-- composition -->
+                    <div class="composition item">
+                        <h3>Composition</h3>
+                        <input type="radio" id="drude" name="comp" value="drude">
+                        <label for="drude">Drude</label><br>
+                        <input type="radio" id="silicate" name="comp" value="silicate">
+                        <label for="silicate">Silicate</label><br>
+                        <input type="radio" id="graphite" name="comp" value="graphite">
+                        <label for="graphtie">Graphite</label><br>
+                        <br>
+                        <label>rho:</label>
+                        <input type="number" id="rho" value=""><br>
+                    </div>
+                    <!-- energy -->
+                    <div class="energy item">
+                        <h3>Energy</h3>
+                        <label>min:</label>
+                        <input type="number" id="emin" value=""><br>
+                        <label>max:</label>
+                        <input type="number" id="emax" value=""><br>
+                        <label>flux:</label>
+                        <input type="number" id="flux" value=""><br>
+                    </div>
+                    <!-- scattering model -->
+                    <div class="scatmodel item">  
+                        <h3>Scattering Model</h3>
+                        <input type="radio" id="RG" name="model" value="Rayleigh Gans">
+                        <label for="RG">Rayleigh Gans</label><br>
+                        <input type="radio" id="mie" name="model" value="Mie">
+                        <label for="mie">Mie</label><br>
+                    </div>
+                </div>
+            </form><br>
+            <input type="submit" value="Submit">
+        </div>
+    </body>
+</html>
