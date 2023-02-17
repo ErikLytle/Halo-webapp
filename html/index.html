@@ -6,7 +6,7 @@
     </head>
     <body class="body">
         <header>
-
+            <h2>Dust Scattering Halo Calculation Tool</h2>
         </header>
         <div>
             <form>
@@ -15,11 +15,11 @@
                     <div class="powerlaw item">
                         <h3>Powerlaw</h3>
                         <label for="amin">amin:</label>
-                        <input type="number" id="amin" value=""><br>
+                        <input type="number" id="amin" value="" max="5" min="0.0001"> microns<br>
                         <label for="amax">amax:</label>
-                        <input type="number" id="amax" value=""><br>
+                        <input type="number" id="amax" value="" max="5" min="0.0001"> microns<br>
                         <label for="slope">slope:</label>
-                        <input type="number" id="slope" value=""><br>
+                        <input type="number" id="slope" value="" max="10" min="0"><br>
                     </div>
                     <!-- composition -->
                     <div class="composition item">
@@ -29,7 +29,7 @@
                         <input type="radio" id="silicate" name="comp" value="silicate">
                         <label for="silicate">Silicate</label><br>
                         <input type="radio" id="graphite" name="comp" value="graphite">
-                        <label for="graphtie">Graphite</label><br>
+                        <label for="graphite">Graphite</label><br>
                         <br>
                         <label>rho:</label>
                         <input type="number" id="rho" value=""><br>
@@ -38,11 +38,11 @@
                     <div class="energy item">
                         <h3>Energy</h3>
                         <label>min:</label>
-                        <input type="number" id="emin" value=""><br>
+                        <input type="number" id="emin" value="" max="10" min="0.1"> keV<br>
                         <label>max:</label>
-                        <input type="number" id="emax" value=""><br>
+                        <input type="number" id="emax" value="" max="10" min="0.1"> keV<br>
                         <label>flux:</label>
-                        <input type="number" id="flux" value=""><br>
+                        <input type="number" id="flux" value="" max="0.00000024" min="0.0000000000001"> erg/s/cm^2<br>
                     </div>
                     <!-- scattering model -->
                     <div class="scatmodel item">  
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </form><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Calculate">
         </div>
     </body>
 </html>
